@@ -5,16 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "cwd": "${workspaceRoot}",
-            "executable": "./build/test.elf",
-            "name": "Debug (J-Link)",
-            "request": "launch",
-            "type": "cortex-debug",
-            "servertype": "jlink",
-            "device": "STM32F103C8",
-            "interface": "swd",
-            "serialNumber": "788529266",
-            "ipAddress": null,
-        },
+        "type": "cortex-debug",
+        "cwd": "${workspaceRoot}",
+        "request": "launch",
+        "name": "Debug J-Link",
+        "executable": "${workspaceRoot}/build/test.elf",
+        "serverpath": "C:/Program Files (x86)/SEGGER/JLink_V644g/JLinkGDBServerCL.exe", 
+        "servertype": "jlink",
+        "device": "STM32F103C8",
+        "interface": "swd",
+        "serialNumber": "788529266", //if you have more than one J-Link probe add the serial number here 
+        //"jlinkscript":"${workspaceRoot}/jlinkScript.js",
+        "runToMain": true,
+        "svdFile": "${workspaceRoot}/STM32F103xx.svd",
+        }
     ]
 }

@@ -2,5 +2,7 @@
     "files.associations": {
         "stm32f1xx_hal_gpio.h": "c"
     },
-    "C_Cpp.default.cStandard": "c99"
+    "C_Cpp.default.cStandard": "c99",
+    "cortex-debug.enableTelemetry": false,
+    "cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V644g/JLinkGDBServerCL.exe"
 }
