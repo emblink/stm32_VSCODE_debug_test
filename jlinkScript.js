@@ -1,6 +1,4 @@
 //#Initially reset the target
-monitor reset
-//#Load the application
+monitor endian little
 load
-break main
-continue
+monitor reset

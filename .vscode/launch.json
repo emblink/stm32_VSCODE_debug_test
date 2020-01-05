@@ -15,7 +15,7 @@
         "device": "STM32F103C8",
         "interface": "swd",
         "serialNumber": "788529266", //if you have more than one J-Link probe add the serial number here 
-        //"jlinkscript":"${workspaceRoot}/jlinkScript.js",
+        "jlinkscript":"${workspaceRoot}/jlinkScript.js",
         "runToMain": true,
         "svdFile": "${workspaceRoot}/STM32F103xx.svd",
         }
